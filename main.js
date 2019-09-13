@@ -24,10 +24,14 @@ $(document).ready(function() {
         $('#searchBox').toggleClass('d-none');
         $('#clear').toggleClass('d-none');
     });
-
-    // $('#orgLevel').on('change', function() {
-    //     $('#selectRegion').toggleClass('d-none', this.value != 'Region');
-    // });
+    $('#orgLevel').on('change', function() {
+        $('#regionName').toggleClass('d-none', this.value != 'B');
+        if ($('#regionName').hasClass('d-none')) {
+            $('#unitName').removeClass('d-none')
+        } else {
+            $('#unitName').addClass('d-none')
+        };
+    });
 });
 
 $(function() {
