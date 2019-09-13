@@ -1,0 +1,156 @@
+.box-container {
+    background: #F0F0F0;
+    padding: 20px 0px;
+    border: 1px solid gray;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .03);
+    border: 1px solid rgb(128, 128, 128);
+    border-top: none;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.sub {
+    display: none;
+}
+
+.cardBody {
+    padding: 30px;
+}
+
+.collapse.in#collapseOne {
+    border: 1px solid rgb(128, 128, 128);
+    border-top: none;
+}
+
+.d-none {
+    display: none;
+}
+
+#searchFilters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-item-flexend {
+    display: flex;
+    align-items: flex-end;
+}
+
+.align-item-center {
+    display: flex;
+    align-items: center;
+}
+
+.justify-content-end {
+    display: flex;
+    justify-content: flex-end
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.bootstrap-select .bs-ok-default::after {
+    width: 0.3em;
+    height: 0.6em;
+    border-width: 0 0.1em 0.1em 0;
+    transform: rotate(45deg) translateY(0.5rem);
+}
+
+.btn.dropdown-toggle:focus {
+    outline: none !important;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.drop-border {
+    border: 1px solid gray;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.ml-0 {
+    margin-left: 0px;
+}
+
+.p-0 {
+    padding: 0px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.ms-options-wrap button {
+    border-radius: 8px;
+    height: 40px;
+    font-size: 14px !important;
+    line-height: 1.42857143;
+    color: #555!important;
+}
+
+.ms-options {
+    border-radius: 8px;
+    box-shadow: #c9c9c9 -2px 4px 10px;
+    min-height: 100px !important;
+}
+
+.ms-active button {
+    background-color: #f0f0f0 !important;
+}
+
+.ms-options-wrap>.ms-options>ul input[type="checkbox"] {
+    top: 5px !important;
+}
+
+.ms-options-wrap>.ms-options>ul label {
+    padding: 1px 4px 1px 20px !important;
+}
+
+.ms-options-wrap>.ms-options>ul label:hover {
+    background-color: #fa772a !important;
+    border-color: transparent !important;
+    color: white !important;
+}
+
+.ms-options-wrap>button:focus {
+    border-color: #66afe9 !important;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    border: 1px solid #66afe9;
+}
