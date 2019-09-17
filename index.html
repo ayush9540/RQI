@@ -37,7 +37,7 @@
                         <div class="col-md-12 box-container" style="clear:both;">
                             <div id="searchFilters">
                                 <div class="col-md-9 col-sm-9 align-item-flexend">
-                                    <div class="col-sm-3 col-md-3">
+                                    <div class="col-md-3 pad0 mr-15">
                                         <label>Org Level</label>
                                         <select class="form-control" id="orgLevel">
                                             <option value="" disabled selected>Select</option>
@@ -47,7 +47,7 @@
                                             <option value="4">Department</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-3 col-md-3" id="unitName" style="display: none">
+                                    <div class="col-md-3 pad0 mr-15" id="unitName" style="display: none">
                                         <label>Unit(s) Name</label>
                                         <select name="category" class="form-control" id="category">
                                             <option>1</option>
@@ -87,7 +87,7 @@
                                         <a href="#" class="cl_search cl_inst_dept">Clear Search</a>
                                     </div>
                                     <div class="col-md-2 col-sm-2 pad0" id="searchBox">
-                                        <button class="btn btn-default white_btn ml-0" name="" value="Search">Search</button>
+                                        <button class="btn btn-default white_btn ml-0 disabled" id="searchbtn" name="" value="Search">Search</button>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-3" style="display:block">
@@ -105,7 +105,7 @@
                         <div id="accordion">
                             <div class="card">
                                 <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    <a class="card-link inactive" data-toggle="collapse" href="#collapseOne">
                                         More Sub-Levels
                                     </a>
                                 </div>
