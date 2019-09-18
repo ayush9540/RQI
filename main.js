@@ -1,8 +1,17 @@
 $(document).ready(function() {
     $('.card-link').click(function() {
-        $('#searchBox').toggleClass('d-none');
-        $('#clear').toggleClass('d-none');
+        var elem = $("#collapseOne");
+        if (!elem.hasClass("inside")) {
+            elem.addClass("inside")
+            $("#searchBox").hide();
+            $("#clear").hide();
+        } else if (elem.hasClass("inside")) {
+            elem.removeClass("inside")
+            $("#searchBox").show();
+            $("#clear").show();
+        }
     });
+
     document.getElementById('orgLevel').addEventListener('change', function() {
         $('#clear').removeClass('d-none');
         $('.card-link').removeClass('inactive');
@@ -30,11 +39,16 @@ $(document).ready(function() {
         }
 
         if (this.value == '4') {
+            var elem = $("#collapseOne");
+            elem.removeClass("inside");
             $('.card-link').addClass('inactive');
             $("#deptInsidePanel").hide();
             $("#instituteInsidePanel").hide();
             $("#regionInsidePanel").hide();
-            $("#collapseOne").removeClass("in").addClass("collapse")
+            $("#collapseOne").removeClass("in").addClass("collapse");
+            $("#searchBox").show();
+            $("#clear").show();
+
         } else {
             $("#deptInsidePanel").show();
             $('.card-link').removeClass('inactive');

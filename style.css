@@ -170,3 +170,45 @@
     border-right-width: 3px !important;
     border-top-color: #3f3f3f !important;
 }
+
+.search-box,
+.close-icon {
+    position: relative;
+    padding: 10px;
+}
+
+.search-box {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 8px;
+}
+
+.close-icon {
+    border: 1px solid transparent;
+    background-color: transparent;
+    display: contents;
+    vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+
+.close-icon:after {
+    content: "X";
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    right: 35px;
+    top: 37px;
+    bottom: 0;
+    margin: auto;
+    padding: 2px;
+    color: #858484;
+    font-weight: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-box:not(:valid)~.close-icon {
+    display: none;
+}

@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="https://qa-rqi1stop.laerdalblr.in//img/1002/favicon.ico" />
     <script src="https://qa-rqi1stop.laerdalblr.in/dist/js/jquery.min.js"></script>
     <script src="https://qa-rqi1stop.laerdalblr.in/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
     <link href="./jquery.multiselect.css" rel="stylesheet" />
     <script src="./jquery.multiselect.js"></script>
 </head>
@@ -83,17 +84,20 @@
                                             <option value="CA">Department 5</option>
                                         </select>
                                     </div>
-                                    <div class="col-xs-2 mb-10 d-none " id="clear">
+                                    <div class="col-xs-2 mb-10 d-none" id="clear">
                                         <a href="#" class="cl_search cl_inst_dept">Clear Search</a>
                                     </div>
                                     <div class="col-md-2 col-sm-2 pad0" id="searchBox">
                                         <button class="btn btn-default white_btn ml-0 disabled" id="searchbtn" name="" value="Search">Search</button>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-sm-3" style="display:block">
-                                    <label for="exampleInputFile">Search for Name or Email</label>
-                                    <input type="text" id="searchbox_name_email" name="searchbox_name_email" class="form-control mb0" placeholder="Search for Name or Email" value="">
-                                </div>
+                                <form>
+                                    <div class="col-md-12 col-sm-9" style="display:block">
+                                        <label for="exampleInputFile">Search for Name or Email</label>
+                                        <input type="text" id="searchbox_name_email" name="focus" required class="search-box mb0" placeholder="Search for Name or Email" value="">
+                                        <button class="close-icon" type="reset"></button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -166,7 +170,6 @@
         </div>
     </div>
     <script src="https://qa-rqi1stop.laerdalblr.in/dist/js/bootstrap-select.js"></script>
-    <script src="main.js"></script>
 </body>
 
 </html>
