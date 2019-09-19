@@ -10,6 +10,16 @@ $(document).ready(function() {
             $("#searchBox").show();
             $("#clear").show();
         }
+
+        $(".ms-selectall").trigger("click");
+        $("#instituteInsidePanel span").html("5 selected");
+        $("#deptInsidePanel span").html("5 selected");
+        $("#regionInsidePanel span").html("5 selected");
+
+        $("#regionName span").html("Select Region(s)");
+        $("#instituteName span").html("Select Institute(s)");
+        $("#departmentName span").html("Select Department(s)");
+
     });
 
     $("#inputSearch").click(function() {
@@ -102,5 +112,4 @@ $(function() {
         },
         selectAll: true
     });
-
 });

@@ -219,7 +219,7 @@
 
 .mainLoginInput::-webkit-input-placeholder {
     font-family: FontAwesome;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
     overflow: visible;
     vertical-align: top;
@@ -229,7 +229,7 @@
     color: #b5b5b5;
     text-align: right;
     position: relative;
-    top: 3px;
+    top: 2px;
 }
 
 input.mainLoginInput[required]+label {
