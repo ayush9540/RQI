@@ -12,6 +12,22 @@ $(document).ready(function() {
         }
     });
 
+    $("#inputSearch").click(function() {
+        $(this).hide();
+        $("#searchbox_name_email").focus();
+    });
+    $("#searchbox_name_email").click(function() {
+        $("#inputSearch").hide();
+    });
+    $(".close-icon").click(function() {
+        $("#inputSearch").show();
+    });
+    $("#searchbox_name_email").focusout(function() {
+        if ($(this).val().length === 0) {
+            $("#inputSearch").show();
+        }
+    });
+
     document.getElementById('orgLevel').addEventListener('change', function() {
         $('#clear').removeClass('d-none');
         $('.card-link').removeClass('inactive');

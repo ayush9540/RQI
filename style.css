@@ -198,17 +198,57 @@
     display: block;
     position: absolute;
     background-color: transparent;
-    right: 35px;
+    right: 25px;
     top: 37px;
     bottom: 0;
     margin: auto;
     padding: 2px;
-    color: #858484;
+    color: #a6a6a6;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
 }
 
 .search-box:not(:valid)~.close-icon {
     display: none;
+}
+
+.mainLoginInput {
+    padding: 10px;
+}
+
+.mainLoginInput::-webkit-input-placeholder {
+    font-family: FontAwesome;
+    font-size: 24px;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 4px;
+    color: #b5b5b5;
+    text-align: right;
+    position: relative;
+    top: 3px;
+}
+
+input.mainLoginInput[required]+label {
+    color: #808080;
+    font-weight: 500;
+    font-family: 'robotoregular';
+    position: absolute;
+    left: 25px;
+    top: 38px;
+}
+
+input.mainLoginInput[required]:invalid+label {
+    display: inline-block;
+}
+
+input.mainLoginInput[required]:valid+label {
+    display: none;
+}
+
+#inputSearch:hover {
+    cursor: text;
 }
