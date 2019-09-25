@@ -10,18 +10,53 @@ $(document).ready(function() {
             $("#searchBox").show();
             $("#clear").show();
         }
-
-        $(".ms-selectall").trigger("click");
-        $("#instituteInsidePanel span").html("5 selected");
-        $("#deptInsidePanel span").html("5 selected");
-        $("#regionInsidePanel span").html("5 selected");
-
-        $("#regionName span").html("Select Region(s)");
-        $("#instituteName span").html("Select Institute(s)");
-        $("#departmentName span").html("Select Department(s)");
-
+        // var els = $(".ms-options label");
+        // els.addClass("mightOverflow");
+        // $(".ms-selectall").trigger("click");
+        // $("#instituteInsidePanel span").html("5 selected");
+        // $("#deptInsidePanel span").html("5 selected");
+        // $("#regionInsidePanel span").html("5 selected");
+        // $("#regionName span").html("Select Region(s)");
+        // $("#instituteName span").html("Select Institute(s)");
+        // $("#departmentName span").html("Select Department(s)");
     });
+    // $('select[multiple]').click(function() {
+    //     $(".ms-options > label").addClass("mightOverflow");
+    //     $(".ms-options-wrap.ms-active .ms-options ul li").addClass("mightOverflow");
 
+    // });
+    // $(".ms-options-wrap.ms-active .ms-options ul li").addClass("mightOverflow");
+    //$(".ms-options > label").addClass("mightOverflow");
+
+    // $(".ms-options-wrap.ms-active").find("li").addClass("test");
+
+    // var x = $(".ms-options-wrap");
+    // if (!x.hasClass("ms-active")) {
+    //     $(x).addClass("test");
+    //     alert("hi");
+    // }
+
+    // $.fn.tooltipOnOverflow = function(options) {
+    //     $(this).on("mouseenter", function() {
+    //         if (this.offsetWidth < this.scrollWidth) {
+    //             options = options || { placement: "auto" }
+    //             options.title = $(this).text();
+    //             $(this).tooltip(options);
+    //             $(this).tooltip("show");
+    //         } else {
+    //             if ($(this).data("bs.tooltip")) {
+    //                 $tooltip.tooltip("hide");
+    //                 $tooltip.removeData("bs.tooltip");
+    //             }
+    //         }
+    //     });
+    // };
+
+    // $('.mightOverflow').tooltipOnOverflow();
+
+
+
+    /* clear & search from input search start */
     $("#inputSearch").click(function() {
         $(this).hide();
         $("#searchbox_name_email").focus();
@@ -37,6 +72,7 @@ $(document).ready(function() {
             $("#inputSearch").show();
         }
     });
+    /* clear & search from input search end */
 
     document.getElementById('orgLevel').addEventListener('change', function() {
         $('#clear').removeClass('d-none');
@@ -83,6 +119,15 @@ $(document).ready(function() {
 });
 
 $(function() {
+
+    $("#clear,#clear-inCollapsible").bind("click", function() {
+        $("select")[0].selectedIndex = 0;
+        $('select[multiple]').multiselect('reset');
+    });
+
+    // var x = $(".ms-options-wrap.ms-active");
+    // $(x).closest("li").addClass("testClass");
+
     $('select[multiple].active.region').multiselect({
         columns: 1,
         placeholder: 'Select Region(s)',

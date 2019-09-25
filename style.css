@@ -1,7 +1,9 @@
 .box-container {
     background: #F0F0F0;
-    padding: 20px 16px;
+    padding: 20px 0px;
     border: 1px solid gray;
+    float: left;
+    width: 100%;
 }
 
 .card {
@@ -41,7 +43,7 @@
 }
 
 .cardBody {
-    padding: 30px;
+    padding: 20px 10px;
 }
 
 .collapse.in#collapseOne {
@@ -53,10 +55,11 @@
     display: none;
 }
 
-#searchFilters {
+
+/* #searchFilters {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .align-item-flexend {
     display: flex;
@@ -66,6 +69,10 @@
 .align-item-center {
     display: flex;
     align-items: center;
+}
+
+.padtb10 {
+    padding: 10px 0px;
 }
 
 .justify-content-end {
@@ -79,6 +86,15 @@
 
 .mr-10 {
     margin-right: 10px;
+}
+
+.anchor {
+    text-decoration: underline;
+    color: #777777;
+}
+
+.cont-up {
+    height: 77px;
 }
 
 .bootstrap-select .bs-ok-default::after {
@@ -238,7 +254,7 @@ input.mainLoginInput[required]+label {
     font-family: 'robotoregular';
     position: absolute;
     left: 25px;
-    top: 38px;
+    top: 48px;
 }
 
 input.mainLoginInput[required]:invalid+label {
@@ -251,4 +267,10 @@ input.mainLoginInput[required]:valid+label {
 
 #inputSearch:hover {
     cursor: text;
+}
+
+.mightOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

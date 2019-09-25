@@ -23,84 +23,102 @@
     <div class="content body-content">
         <div class="content">
             <div class="container">
-                <div class="col-md-12 pad0">
+                <div class="col-md-12">
                     <h1>Compliance Reports</h1>
                 </div>
-                <div class="col-md-12 padtb">
-                    <div class="form-group">
-                        <div class="checkbox checkbox-primary">
-                            <input type="checkbox" class="form-control" name="include_not_started" id="include_not_started" checked="checked" value="1">
-                            <!-- <label for="include_not_started">Include not started learners</label> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12 box-container" style="clear:both;">
+                        <div class="box-container" style="clear:both;">
                             <div id="searchFilters">
-                                <div class="col-md-9 col-sm-9 align-item-flexend">
-                                    <div class="col-md-3 pad0 mr-15">
-                                        <label>Org Level</label>
-                                        <select class="form-control" id="orgLevel">
-                                            <option value="" disabled selected>Select</option>
-                                            <option value="1">Organization</option>
-                                            <option value="2">Region</option>
-                                            <option value="3">Institute</option>
-                                            <option value="4">Department</option>
-                                        </select>
+                                <div class="col-md-9 col-sm-9">
+                                    <div class="col-md-4">
+                                        <div class="padtb10">
+                                            <label>Org Level</label>
+                                            <select class="form-control" id="orgLevel">
+                                                <option value="" disabled selected>Select</option>
+                                                <option value="1">Organization</option>
+                                                <option value="2">Region</option>
+                                                <option value="3">Institute</option>
+                                                <option value="4">Department</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 pad0 mr-15" id="unitName" style="display: none">
-                                        <label>Unit(s) Name</label>
-                                        <select name="category" class="form-control" id="category">
-                                            <option>1</option>
-                                        </select>
+                                    <div class="col-md-4" id="unitName" style="display: none">
+                                        <div class="padtb10">
+                                            <label>Unit(s) Name</label>
+                                            <select name="category" class="form-control" id="category">
+                                                <option value="" disabled selected>Select</option>
+                                                <option value="1">Organization-1</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 pad0 mr-15" id="regionName" style="display: none">
-                                        <label>Region(s) Name</label>
-                                        <select name="basic[]" multiple="multiple" class="active region">
-                                            <option value="AL">Region 1</option>
-                                            <option value="AK">Region 2</option>
-                                            <option value="AZ">Region 3</option>
-                                            <option value="AR">Region 4</option>
-                                            <option value="CA">Region 5</option>
-                                        </select>
+                                    <div class="col-md-4" id="regionName" style="display: none">
+                                        <div class="padtb10">
+                                            <label>Region(s) Name</label>
+                                            <select name="basic[]" multiple="multiple" class="active region">
+                                                <option value="AL">Region 1</option>
+                                                <option value="AK">Region 2</option>
+                                                <option value="AZ">Region 3</option>
+                                                <option value="AR">Region 4</option>
+                                                <option value="CA">Region 5</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 pad0 mr-15" id="instituteName" style="display: none">
-                                        <label>Institute(s) Name</label>
-                                        <select name="basic[]" multiple="multiple" class="active institute">
-                                            <option value="AL">Institute 1</option>
-                                            <option value="AK">Institute 2</option>
-                                            <option value="AZ">Institute 3</option>
-                                            <option value="AR">Institute 4</option>
-                                            <option value="CA">Institute 5</option>
-                                        </select>
+                                    <div class="col-md-4" id="instituteName" style="display: none">
+                                        <div class="padtb10">
+                                            <label>Institute(s) Name</label>
+                                            <select name="basic[]" multiple="multiple" class="active institute">
+                                                <option value="AL">Institute 1</option>
+                                                <option value="AK">Institute 2</option>
+                                                <option value="AZ">Institute 3</option>
+                                                <option value="AR">Institute 4</option>
+                                                <option value="CA">Institute 5</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 pad0 mr-15" id="departmentName" style="display: none">
-                                        <label>Department(s) Name</label>
-                                        <select name="basic[]" multiple="multiple" class="active dept">
-                                            <option value="AL">Department 1</option>
-                                            <option value="AK">Department 2</option>
-                                            <option value="AZ">Department 3</option>
-                                            <option value="AR">Department 4</option>
-                                            <option value="CA">Department 5</option>
-                                        </select>
+                                    <div class="col-md-4" id="departmentName" style="display: none">
+                                        <div class="padtb10">
+                                            <label>Department(s) Name</label>
+                                            <select name="basic[]" multiple="multiple" class="active dept">
+                                                <option value="AL">Department 1</option>
+                                                <option value="AK">Department 2</option>
+                                                <option value="AZ">Department 3</option>
+                                                <option value="AR">Department 4</option>
+                                                <option value="CA">Department 5</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col-xs-2 mb-10 d-none" id="clear">
-                                        <a href="#" class="cl_search cl_inst_dept">Clear Search</a>
+                                    <div class="col-md-4 cont-up align-item-flexend">
+                                        <div class="row d-flex align-item-center">
+                                            <div class="col-md-7 col-sm-7 d-none" id="clear">
+                                                <a href="#" class="anchor">Clear Search</a>
+                                            </div>
+                                            <div class="col-md-5 col-sm-5" id="searchBox">
+                                                <button class="btn btn-default white_btn ml-0 disabled" id="searchbtn" name="" value="Search">Search</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-2 col-sm-2 pad0" id="searchBox">
-                                        <button class="btn btn-default white_btn ml-0 disabled" id="searchbtn" name="" value="Search">Search</button>
-                                    </div>
+
                                 </div>
+
                                 <div class="col-md-3 col-sm-3" style="display:block">
-                                    <form>
-                                        <label for="exampleInputFile">Search for Name or Email</label>
-                                        <input class="mainLoginInput search-box mb0" id="searchbox_name_email" type="text" placeholder="&#61442" name="focus" required value="" />
-                                        <label id="inputSearch">Search for Name or Email</label>
-                                        <button class="close-icon" type="reset"></button>
-                                    </form>
+                                    <div class="padtb10">
+                                        <form>
+                                            <label for="exampleInputFile">Search for Name or Email</label>
+                                            <input class="mainLoginInput search-box mb0" id="searchbox_name_email" type="text" placeholder="&#61442" name="focus" required value="" />
+                                            <label id="inputSearch">Search for Name or Email</label>
+                                            <button class="close-icon" type="reset"></button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- <div class="row">
+                                <div class="mightOverflow col-xs-1">
+                                    this is some long text !
+                                </div>
+                            </div> -->
+
                         </div>
                     </div>
                 </div>
@@ -120,44 +138,51 @@
                                         <div class="form-group">
                                             <div class="row align-item-flexend">
                                                 <div class="col-md-9">
-                                                    <div class="col-md-3 pad0 mr-15" id="regionInsidePanel">
-                                                        <label>Region(s) Name</label>
-                                                        <select name="basic[]" multiple="multiple" class="active region">
-                                                            <option value="AL">Region 1</option>
-                                                            <option value="AK">Region 2</option>
-                                                            <option value="AZ">Region 3</option>
-                                                            <option value="AR">Region 4</option>
-                                                            <option value="CA">Region 5</option>
-                                                        </select>
+                                                    <div class="col-md-4" id="regionInsidePanel">
+                                                        <div class="padtb10">
+                                                            <label>Region(s) Name</label>
+                                                            <select name="basic[]" multiple="multiple" class="active region">
+                                                                <option value="AL">Region 1</option>
+                                                                <option value="AK">Region 2</option>
+                                                                <option value="AZ">Region 3</option>
+                                                                <option value="AR">Region 4</option>
+                                                                <option value="CA">Region 5</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-md-3 pad0 mr-15" id="instituteInsidePanel">
-                                                        <label>Institute(s) Name</label>
-                                                        <select name="basic[]" multiple="multiple" class="active institute">
-                                                            <option value="AL">Institute 1</option>
-                                                            <option value="AK">Institute 2</option>
-                                                            <option value="AZ">Institute 3</option>
-                                                            <option value="AR">Institute 4</option>
-                                                            <option value="CA">Institute 5</option>
-                                                        </select>
+                                                    <div class="col-md-4" id="instituteInsidePanel">
+                                                        <div class="padtb10">
+                                                            <label>Institute(s) Name</label>
+                                                            <select name="basic[]" multiple="multiple" class="active institute">
+                                                                <option value="AL">Institute 1</option>
+                                                                <option value="AK">Institute 2</option>
+                                                                <option value="AZ">Institute 3</option>
+                                                                <option value="AR">Institute 4</option>
+                                                                <option value="CA">Institute 5</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-md-3 pad0 mr-15" id="deptInsidePanel">
-                                                        <label>Department(s) Name</label>
-                                                        <select name="basic[]" multiple="multiple" class="active dept">
-                                                            <option value="AL">Department 1</option>
-                                                            <option value="AK">Department 2</option>
-                                                            <option value="AZ">Department 3</option>
-                                                            <option value="AR">Department 4</option>
-                                                            <option value="CA">Department 5</option>
-                                                        </select>
+                                                    <div class="col-md-4" id="deptInsidePanel">
+                                                        <div class="padtb10">
+                                                            <label>Department(s) Name</label>
+                                                            <select name="basic[]" multiple="multiple" class="active dept">
+                                                                <option value="AL">Department 1</option>
+                                                                <option value="AK">Department 2</option>
+                                                                <option value="AZ">Department 3</option>
+                                                                <option value="AR">Department 4</option>
+                                                                <option value="CA">Department 5</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 align-item-center justify-content-end">
-                                                    <div class="mr-10">
-                                                        <a href="#" class="cl_search cl_inst_dept">Clear Search</a>
-                                                    </div>
-                                                    <div>
-                                                        <label for="placedBy" class=""></label>
-                                                        <button class="btn btn-default white_btn" name="" value="Search">Search</button>
+                                                <div class="col-md-3 cont-up align-item-flexend">
+                                                    <div class="row d-flex align-item-center padtb10" id="clear-inCollapsible">
+                                                        <div class="col-md-7 col-sm-7">
+                                                            <a href="#" class="anchor">Clear Search</a>
+                                                        </div>
+                                                        <div class="col-md-5 col-sm-5">
+                                                            <button class="btn btn-default white_btn" name="" value="Search">Search</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
