@@ -374,6 +374,7 @@ th {
     display: flex;
     align-items: stretch;
     padding: 0px 10px;
+    margin-bottom: 8px;
 }
 
 .flex-container>div {
