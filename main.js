@@ -19,7 +19,6 @@ $(document).ready(function() {
         $(".close-icon").hide();
         $("#searchbox_name_email").val("");
     });
-
     $("#inputSearch").click(function() {
         $(this).hide();
         $("#searchbox_name_email").focus();
@@ -27,8 +26,9 @@ $(document).ready(function() {
     $("#searchbox_name_email").click(function() {
         $("#inputSearch").hide();
     });
-
-
+    $('#searchbox_name_email').keypress(function() {
+        $("#inputSearch").hide();
+    });
     $("#searchbox_name_email").focusout(function() {
         if ($(this).val().length === 0) {
             $("#inputSearch").show();
@@ -37,6 +37,7 @@ $(document).ready(function() {
     });
     $("#searchbox_name_email").focusin(function() {
         $(".close-icon").show();
+        $("#inputSearch").hide();
     });
     /* clear & search from input search end */
 

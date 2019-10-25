@@ -256,7 +256,7 @@
 }
 
 .mainLoginInput {
-    padding: 10px;
+    padding: 8px 5px;
 }
 
 .mainLoginInput::-webkit-input-placeholder {
@@ -295,18 +295,9 @@ input.mainLoginInput+label {
     font-family: 'robotoregular';
     position: absolute;
     left: 25px;
-    top: 48px;
+    top: 46px;
     width: 90%;
 }
-
-
-/* input.mainLoginInput:invalid+label {
-    display: inline-block;
-}
-
-input.mainLoginInput:valid+label {
-    display: none;
-} */
 
 #inputSearch:hover {
     cursor: text;
@@ -333,4 +324,78 @@ input.mainLoginInput:valid+label {
 
 .card-link.collapsed:after {
     content: "\e080";
+}
+
+.pad15 {
+    padding: 15px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+#SummarySection {
+    background-color: #fff;
+}
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 170px;
+    overflow-x: hidden;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px 16px;
+}
+
+th {
+    background: #fff;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    border: 1px solid #dedede;
+    border-left: none;
+    border-right: none;
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    padding: 0px 10px;
+}
+
+.flex-container>div {
+    background-color: #fff;
+    color: grey;
+    width: 100px;
+    margin: 5px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.border {
+    border: 1px solid;
+}
+
+#items {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.font22 {
+    font-size: 22px;
 }
