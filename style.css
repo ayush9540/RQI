@@ -69,6 +69,11 @@
     align-items: flex-end;
 }
 
+.justify-content-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .align-item-center {
     display: flex;
     align-items: center;
@@ -399,4 +404,26 @@ th {
 
 .font22 {
     font-size: 22px;
+}
+
+.p-tb-5 {
+    padding: 5px 0px;
+}
+
+.p-rl-10 {
+    padding: 0px 10px;
+}
+
+#summarySectionDashboard {
+    border: 1px solid;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#summarySectionDashboard label {
+    margin-bottom: 0px;
+    color: inherit;
+    font-weight: normal;
+    font-family: inherit;
 }
